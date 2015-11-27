@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <!--DonutProgress-->
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_progress" format="integer"/>
+        <attr name="donut_max" format="integer"/>
+        <attr name="donut_unfinished_color" format="color"/>
+        <attr name="donut_finished_color" format="color"/>
+        <attr name="donut_finished_stroke_width" format="dimension"/>
+        <attr name="donut_unfinished_stroke_width" format="dimension"/>
+        <attr name="donut_text_size" format="dimension"/>
+        <attr name="donut_text_color" format="color"/>
+        <attr name="donut_text" format="string"/>
+        <attr name="donut_prefix_text" format="string"/>
+        <attr name="donut_suffix_text" format="string"/>
+        <attr name="donut_background_color" format="color"/>
+    </declare-styleable>
+
+
+    <!--CircularProgressView-->
+    <declare-styleable name="CircleProgressView">
+        <!-- Text-->
+        <attr name="cpv_text" format="string"/>
+        <attr name="cpv_unit" format="string"/>
+        <attr name="cpv_textColor" format="color"/>
+        <attr name="cpv_unitColor" format="color"/>
+        <attr name="cpv_showUnit" format="boolean"/>
+        <attr name="cpv_textSize" format="dimension"/>
+        <attr name="cpv_unitSize" format="dimension"/>
+        <attr name="cpv_textScale" format="float"/>
+        <attr name="cpv_unitScale" format="float"/>
+        <attr name="cpv_autoTextColor" format="boolean"/>
+        <attr name="cpv_autoTextSize" format="boolean"/>
+
+        <!-- Progress Bar -->
+        <attr name="cpv_value" format="float"/>
+        <attr name="cpv_maxValue" format="float"/>
+        <attr name="cpv_barWidth" format="dimension"/>
+        <attr name="cpv_barColor" format="color"/>
+        <attr name="cpv_barColor1" format="color"/>
+        <attr name="cpv_barColor2" format="color"/>
+        <attr name="cpv_barColor3" format="color"/>
+        <attr name="cpv_startAngle" format="integer"/>
+
+        <!-- Spinner-->
+        <attr name="cpv_spinColor" format="color"/>
+        <attr name="cpv_spinSpeed" format="float"/>
+        <attr name="cpv_spinBarLength" format="float"/>
+        <attr name="cpv_showTextInSpinningMode" format="boolean"/>
+
+        <!-- Rim-->
+        <attr name="cpv_rimColor" format="color"/>
+        <attr name="cpv_rimWidth" format="dimension"/>
+
+        <!-- Contour-->
+        <attr name="cpv_contourColor" format="color"/>
+        <attr name="cpv_contourSize" format="dimension"/>
+
+        <!-- Background color-->
+        <attr name="cpv_fillColor" format="color"/>
+
+        <!-- Seek mode-->
+        <attr name="cpv_seekMode" format="boolean"/>
+
+        <!-- Block -->
+        <attr name="cpv_blockCount" format="integer"/>
+        <attr name="cpv_blockScale" format="float"/>
+
+        <attr name="cpv_textMode" format="enum">
+            <enum name="Text" value="0"/>
+            <enum name="Percent" value="1"/>
+            <enum name="Value" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>
