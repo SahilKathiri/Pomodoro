@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-
 import at.grabner.circleprogress.CircleProgressView;
 
 
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final CircleProgressView circleProgress = (CircleProgressView) findViewById(R.id.circleProgress);
 
         circleProgress.setMaxValue(startTime);
-        int secs = (int) (startTime /1000);
+        int secs = (int) (startTime / 1000);
         int mins = secs / 60;
         secs = secs % 60;
         circleProgress.setText("" + mins);
@@ -49,12 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         start.setOnClickListener(this);
 
         timerText = (TextView) findViewById(R.id.timer);
-
         timer = new Timer(startTime, interval);
         timerText.setText("" + startTime);
-
-
-
 
 
     }
@@ -63,17 +58,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (!timer_flag) {
             if (millisRemaining == 0) {
-                timer = new Timer(startTime,interval);
-            }
-            else {
+                timer = new Timer(startTime, interval);
+            } else {
                 timer = new Timer(millisRemaining, interval);
             }
             start.setImageResource(R.drawable.ic_pause_black_48dp);
             timer.start();
             timer_flag = true;
 
-        }
-        else {
+        } else {
             timer.cancel();
             timer_flag = false;
             start.setImageResource(R.drawable.ic_play_arrow_black_48dp);
@@ -86,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         timer_flag = false;
         start.setImageResource(R.drawable.ic_play_arrow_black_48dp);
         CircleProgressView circleProgressView = (CircleProgressView) findViewById(R.id.circleProgress);
-        int secs = (int) (startTime /1000);
+        int secs = (int) (startTime / 1000);
         int mins = secs / 60;
         secs = secs % 60;
         circleProgressView.setText("" + mins);
@@ -112,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             timerText.setText("" + millisUntilFinished);
             CircleProgressView circleProgress = (CircleProgressView) findViewById(R.id.circleProgress);
             circleProgress.setValue(millisUntilFinished);
-            int secs = (int) (millisUntilFinished /1000);
+            int secs = (int) (millisUntilFinished / 1000);
             int mins = secs / 60;
             secs = secs % 60;
             circleProgress.setShowUnit(true);
