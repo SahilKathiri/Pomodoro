@@ -37,50 +37,21 @@
         app:cpv_textSize="50sp"
         app:cpv_unitSize="30sp" />
 
-    <ImageButton
-        android:id="@+id/pomodoro"
+    <Button
+        android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:adjustViewBounds="true"
-        android:background="#dc5044"
-        android:padding="10dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_pause_black_48dp"
         android:text="Start" />
 
-
-    <ImageButton
-        android:id="@+id/rest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:adjustViewBounds="true"
-        android:background="#1aa160"
-        android:padding="10dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_pause_black_48dp"
-        android:text="Start" />
-
-    <ImageButton
-        android:id="@+id/longRest"
+    <Button
+        android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:adjustViewBounds="true"
-        android:background="#4e8cf4"
-        android:padding="10dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_pause_black_48dp"
-        android:text="Start" />
+        android:onClick="reset"
+        android:text="Reset" />
 
 </RelativeLayout>
